@@ -1,8 +1,8 @@
 import React from "react";
-import Hero from "../components/About/Hero";
-import Navbar from "../components/Navbar";
-import Story from "../components/About/Story";
-import Footer from "../components/Footer";
+import Hero from "../../components/About/Hero";
+import Navbar from "../../components/Navbar";
+import Story from "../../components/About/Story";
+import Footer from "../../components/Footer";
 
 const About = () => {
   return (

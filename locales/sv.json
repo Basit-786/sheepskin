@@ -1,0 +1,19 @@
+{
+  "Home": {
+    "introText": "Life Orchestrated by Nature in french",
+    "introData": "Where residents can truly connect with nature and find solace amidst the hustle and bustle of city life",
+    "scroll": "Scroll & Explore",
+    "homePageText1": "Explore our Interactive Masterplan to explore all our neighbourhoods in 360 expansive view.",
+    "homePageSvg1": "/assets/svg/homePageSvg1.svg",
+    "homePageLinkTitle1": "",
+    "homePageLink1": "",
+    "homePageText2": "Ghaf Woods is a sanctuary for ambition and purpose. Unlike any other villa community, it responds to contemporary passions for every lifestyle.",
+    "homePageSvg2": "",
+    "homePageLinkTitle2": "Register Interest",
+    "homePageLink2": "",
+    "homePageText3": "Ghaf Woods is a sanctuary for ambition and purpose. Unlike any other villa community, it responds to contemporary passions for every lifestyle.",
+    "homePageSvg3": "/assets/svg/homePageSvg3.svg",
+    "homePageLinkTitle3": "Download Brochure",
+    "homePageLink3": "https://tag-aut.maf.ae/docs/tilalalghaflibraries/default-document-library/alaya-brochure_en.pdf?sfvrsn=51c7a394_1"
+  }
+}

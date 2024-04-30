@@ -1,12 +1,18 @@
 import Link from "next/link";
 import React from "react";
 
+import { useTranslations } from "next-intl";
+
+
 const Hero = () => {
+  const t = useTranslations("Home");
+
   return (
     <div className="px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
       <div>
         <h1 className="text-[90px] font-[700] leading-[100%] max-w-[900px]">
           Unleash the Potential of Animal Skins{" "}
+          {/* {t('introText')} */}
         </h1>
         <p className="text-[#666666] text-lg mt-4">
           At [Your Company Name], we specialize in utilizing the finest animal
