@@ -1,19 +1,105 @@
 {
   "Home": {
-    "introText": "Life Orchestrated by Nature in french",
-    "introData": "Where residents can truly connect with nature and find solace amidst the hustle and bustle of city life",
-    "scroll": "Scroll & Explore",
-    "homePageText1": "Explore our Interactive Masterplan to explore all our neighbourhoods in 360 expansive view.",
-    "homePageSvg1": "/assets/svg/homePageSvg1.svg",
-    "homePageLinkTitle1": "",
-    "homePageLink1": "",
-    "homePageText2": "Ghaf Woods is a sanctuary for ambition and purpose. Unlike any other villa community, it responds to contemporary passions for every lifestyle.",
-    "homePageSvg2": "",
-    "homePageLinkTitle2": "Register Interest",
-    "homePageLink2": "",
-    "homePageText3": "Ghaf Woods is a sanctuary for ambition and purpose. Unlike any other villa community, it responds to contemporary passions for every lifestyle.",
-    "homePageSvg3": "/assets/svg/homePageSvg3.svg",
-    "homePageLinkTitle3": "Download Brochure",
-    "homePageLink3": "https://tag-aut.maf.ae/docs/tilalalghaflibraries/default-document-library/alaya-brochure_en.pdf?sfvrsn=51c7a394_1"
+    "introText": "Witamy w Garbarni Bylinka!",
+    "introData": "Serdecznie witamy na oficjalnej stronie Garbarni Bylinka - miejsca, gdzie tradycja spotyka nowoczesność w sztuce wyprawiania skór. Jesteśmy dumni, że możemy kontynuować rzemiosło, które jest naszą pasją od pokoleń. Zapraszamy do odkrycia naszej szerokiej oferty produktów oraz wyjątkowych usług.",
+    "customSorcingTitle":"Dostępne dostosowane źródła",
+
+    "customSourcingText": "Garbarnia Bylinka jest w stanie pomóc w zaopatrywaniu się w surowe skóry dzięki długotrwałej współpracy z zaufanymi dostawcami. Nasze wieloletnie doświadczenie i zbudowane relacje pozwalają nam oferować klientom wysokiej jakości surowe skóry, które są idealnym punktem wyjścia do dalszej obróbki. Dzięki stabilnym dostawom jesteśmy w stanie sprostać nawet dużym i specyficznym zamówieniom, zapewniając ciągłość i niezawodność dostaw."
+  },
+  "About": {
+    "mainText": "O nas - Garbarnia Bylinka",
+    "description": "W sercu naszej działalności stoi Marian Siuty, właściciel Garbarni Bylinka, który przez ponad 40 lat kształtował swoje obszerne doświadczenie w garbowaniu skór. Przejął rzemiosło od swojego ojca, kontynuując rodzinne tradycje rzemieślnicze. Marian rozpoczął swoją drogę w trudnych czasach komunistycznej Polski, gdzie działalność ta była często ograniczana. Na przestrzeni lat, dzięki swojej wytrwałości i pasji, przekształcił małą rodzinny biznes w jedną z największych garbarni w regionie.",
+    "storyHeading": "Tradycja i innowacja w Garbarni Bylinka",
+    "storyTxt1": "Garbarnia Bylinka łączy tradycyjne rzemiosło z nowoczesnymi technologiami, co pozwala nam osiągnąć najwyższą jakość garbowania skór przy jednoczesnym zachowaniu wszystkich norm środowiskowych. Jesteśmy dumni z naszych procesów produkcyjnych, które są nie tylko efektywne, ale również przyjazne dla środowiska, odzwierciedlając nasze głębokie zaangażowanie w dbanie o lokalną naturę.",
+    "storyTxt2": "Marian Siuty, znany z zaangażowania społecznego, od lat jest także filantropem wspierającym lokalny klub piłkarski. Jego działalność charytatywna pomaga wzmacniać więzi społeczne i promować aktywny tryb życia wśród członków naszej społeczności.",
+    "storyTxt3": "Zespół Garbarni Bylinka składa się z wykwalifikowanych pracowników, którzy od lat tworzą spójny i dobrze skoordynowany zespół wraz z Marianem Siuty. Razem dzielą się wiedzą i doświadczeniem, co jest kluczem do sukcesu naszej firmy. Nasza współpraca nie ogranicza się tylko do projektów lokalnych - mamy również szeroką bazę zadowolonych klientów zarówno w kraju, jak i za granicą, z którymi budujemy trwałe relacje partnerskie.",
+    "storyTxt4": "Garbarnia Bylinka to coś więcej niż miejsce pracy - to miejsce, gdzie tradycja spotyka się z nowoczesnością, gdzie każdy kawałek skóry jest traktowany z szacunkiem, a każdy klient jest dla nas ważny. Zapraszamy do współpracy i odkrycia, jak najlepsze tradycje rzemiosła mogą sprostać wymaganiom współczesnego rynku."
+  },
+  "Common":{
+    "home":"Strona główna",
+    "about":" O nas",
+    "services":" Usługi",
+    "contact":"Kontakt",
+    "explore":"Odkrywać",
+    "ourServices":" nasze usługi",
+    "ourProducts":"nasze produkty",
+    "readMore":"Czytaj więcej"
+
+
+    
+
+  },
+  "Sheeps": {
+    "title": "Skóry Owce - Garbarnia Bylinka",
+    "description": "W Garbarni Bylinka, pod kierownictwem Mariana Siutego, wyprawiamy skóry owcze pochodzące z najszlachetniejszych ras zarówno polskich, jak i międzynarodowych. Każda rasa dostarcza unikalnych cech, które przekładają się na specyficzne właściwości wyprawianych przez nas skór.",
+    "stageOneTitle": "Etap 1: Przygotowanie i czyszczenie",
+    "stageOneDesc": "Proces wyprawiania skór zaczyna się od dokładnego oczyszczenia skór surowych. Usuwane są wszelkie zanieczyszczenia i pozostałości tkanki, co jest kluczowe dla zapewnienia jakości finalnego produktu.",
+    "stageTwoTitle": "Etap 2: Garbowanie",
+    "stageTwoDesc": "To kluczowy etap, w którym skóra jest trwale zmieniana. Używamy naturalnych i syntetycznych środków garbujących, które zapewniają skórze elastyczność i trwałość. Metody garbowania są ekologiczne i bezpieczne dla środowiska.",
+    "stageThreeTitle": "Etap 3: Wykańczanie",
+    "stageThreeDesc": "Po garbowaniu skóra jest farbowana, suszona, a następnie poddawana różnym procesom wykończeniowym, takim jak szlifowanie, polerowanie czy impregnacja. To etapy, które definiują wygląd, fakturę i kolor skóry.",
+    "sheepBreedTitle": "Rasy owcze",
+    "breed1Title": "Merino",
+    "breed1Desc": " Hiszpańska rasa, ceniona za miękką i gęstą wełnę.",
+    "breed2Title": "Dorper",
+    "breed2Desc": " Z Południowej Afryki, znana z adaptacji do klimatu i trwałości skór.",
+    "breed3Title": "Suffolk",
+    "breed3Desc": "  Angielska rasa, znana z produkcji mięsa i trwałych skór.",
+    "breed4Title": "Hampshire",
+    "breed4Desc": " Z Anglii, daje elastyczne i mocne skóry.",
+    "breed5Title": "Texel",
+    "breed5Desc": "  Holenderska rasa, znana z mocnych skór.",
+    "breed6Title": "Corriedale",
+    "breed6Desc": " Nowozelandzka, daje skóry o wysokiej jakości.",
+    "breed7Title": "Romney",
+    "breed7Desc": " Z Anglii, znana z wełny odporną na zawilgocenie.",
+    "breed8Title": "Cheviot",
+    "breed8Desc": "  Szkocka rasa, daje skóry o jednolitym wykończeniu.",
+    "breed9Title": "Lincoln",
+    "breed9Desc": "Angielska rasa, znana z ciężkiego runa.",
+    "breed10Title": "Rambouillet",
+    "breed10Desc": "Francuski odpowiednik merino, znany z doskonałej wełny.",
+    "conclusion": "Dzięki tym procesom i dbałości o szczegóły, Garbarnia Bylinka dostarcza produkty najwyższej jakości, które spełniają oczekiwania nawet najbardziej wymagających klientów. Nasze skóry są przygotowywane z największą starannością, z poszanowaniem zarówno tradycji rzemieślniczych, jak i najnowszych trendów w garbarstwie, co pozwala nam na dostarczanie wyjątkowych produktów na rynki krajowe i międzynarodowe."
+  },
+  "Reindeer": {
+    "title": "Wyprawianie Skór Reniferów - Garbarnia Bylinka",
+    "description": "W Garbarni Bylinka, znanej z mistrzowskiego podejścia do tradycji rzemieślniczej, oferujemy unikatową usługę wyprawiania skór reniferów. Te szlachetne skóry, pozyskiwane z odległych, arktycznych regionów, są cenione na całym świecie ze względu na swoją niezwykłą trwałość i piękno.",
+    "charcteristicTitle": "Skóry reniferów są wyjątkowo odporne na niskie temperatury i wilgoć, co czyni je idealnym materiałem na odzież zimową, obuwie oraz elementy wyposażenia wnętrz, takie jak dywany czy pokrowce. Naturalna tekstura oraz delikatne, ale wyraźne wzornictwo ich sierści dodaje elegancji i ciepła każdemu produktowi.",
+    "processTitle": "Proces wyprawiania",
+    "firstProcessTitle": "Przygotowanie skóry",
+    "firstProcessDec": "Każda skóra jest starannie selekcjonowana i ręcznie czyszczona, aby usunąć wszelkie zanieczyszczenia. Ten etap jest kluczowy, aby zachować naturalne właściwości skóry renifera.",
+    "secondProcessTitle": "Garbowanie",
+    "secondProcessDec": "Używamy specjalnie opracowanej metody garbowania, która podkreśla naturalną wytrzymałość skóry i zabezpiecza ją przed szkodliwymi czynnikami zewnętrznymi. Nasze procesy garbowania są przyjazne dla środowiska, co gwarantuje, że finalny produkt jest zarówno piękny, jak i zrównoważony ekologicznie.",
+    "thirdProcessTitle": "Barwienie i wykańczanie",
+    "thirdProcessDec": "Skóry są delikatnie barwione, aby uwypuklić ich naturalny kolor, zachowując przy tym unikalny wzór sierści. Następnie skóry są wykańczane metodami, które zwiększają ich miękkość i elastyczność, co jest istotne dla komfortu użytkowania.",
+    "applicationTitle": "Zastosowanie skór reniferów",
+    "applicationContent": "Wyprawiane skóry reniferów z Garbarni Bylinka znajdują szerokie zastosowanie zarówno w modzie, jak i w dekoracji wnętrz. Są wybierane przez projektantów mody dla tworzenia luksusowych płaszczy, kurtki i butów zimowych. W sektorze wnętrzarskim skóry te są cenione za ich naturalne piękno i trwałość, idealnie komponując się z różnymi stylami, od skandynawskiego minimalizmu po bardziej tradycyjne aranżacje.",
+    "conclusion": "Dzięki naszemu zaangażowaniu w zachowanie tradycji oraz innowacyjności w technikach wyprawiania, Garbarnia Bylinka jest dumna z możliwości dostarczania produktów, które nie tylko pięknie się prezentują, ale także są wytrzymałe i funkcjonalne. Każda skóra jest świadectwem naszej pasji do rzemiosła i zobowiązania do doskonałości."
+  },
+  "Deer": {
+    "title": "Daniele - Skóry Pełne Elegancji i Gracji w Garbarni Bylinka",
+    "description": "W Garbarni Bylinka pragniemy zaprezentować naszą ofertę wyprawiania skór danieli, które są synonimem wyrafinowania i naturalnej piękności. Daniele, należące do rodziny jeleniowatych, dostarczają skór, które dzięki swoim wyjątkowym cechom, znajdują zastosowanie w najbardziej luksusowych produktach skórzanych.",
+    "charcteristicTitle": "Charakterystyka skór danieli",
+    "characteristicContent": "Skóry danieli charakteryzują się niezwykłą delikatnością i gładkością, co sprawia, że są idealnym materiałem na ekskluzywne akcesoria i detale w wyższej modzie. Naturalny wzór ich futra, subtelnie cętkowany, dodaje każdemu produktowi unikatowego, eleganckiego charakteru. Rozgałęzione, stałe rogi danieli są dodatkowo wykorzystywane w dekoracji i rzemiośle artystycznym, co podkreśla ich wszechstronne zastosowanie.",
+    "processTitle": "Proces wyprawiania",
+    "processContent": "W Garbarni Bylinka, każda skóra daniela jest wyprawiana z największą starannością, aby zachować jej naturalną teksturę i barwę. Proces rozpoczyna się od dokładnego oczyszczenia i przygotowania, po które następuje ekologiczne garbowanie, mające na celu zabezpieczenie skóry przed czynnikami zewnętrznymi i podkreślenie jej naturalnego piękna. Ostatnim etapem jest wykończenie, które obejmuje barwienie oraz techniki zwiększające miękkość i elastyczność skóry, co jest kluczowe dla komfortu użytkowania.",
+    "applicationTitle": "Zastosowanie skór danieli",
+    "applicationContent": "Wyprawiane skóry danieli są cenione za swoją wytrzymałość i estetykę, co sprawia, że znajdują one zastosowanie w produkcji wysokogatunkowej odzieży, eleganckich torebek, portfeli, a także w wykończeniu wnętrz luksusowych pojazdów czy jako elementy dekoracyjne w ekskluzywnych wnętrzach. Ich wszechstronność i trwałość czynią je wyborem dla najbardziej wymagających klientów, którzy szukają produktów łączących luksus z funkcjonalnością.",
+    "qualityTitle": "Zobowiązanie do jakości i tradycji",
+    "qualityContent": "W Garbarni Bylinka zobowiązujemy się do dostarczania produktów, które nie tylko pięknie się prezentują, ale są również wykonane zgodnie z najwyższymi standardami rzemieślniczymi. Każda skóra daniela jest wyprawiana z pasją i precyzją, odzwierciedlając nasze zaangażowanie w promowanie tradycyjnych technik garbarskich oraz nowoczesnych innowacji w branży. Nasza praca z daniele jest świadectwem naszej pasji do sztuki garbarskiej i zobowiązania do ochrony dziedzictwa naturalnego."
+  },
+  "Medical": {
+    "title": "Relugany Medyczne - Wyjątkowa Delikatność dla Zdrowia i Komfortu",
+    "description": "W Garbarni Bylinka specjalizujemy się w produkcji reluganów medycznych, które reprezentują najwyższy standard wyprawiania skór dedykowanych zastosowaniom medycznym. Nasze skóry medyczne są opracowywane z myślą o zapewnieniu maksymalnej miękkości, elastyczności oraz bezpieczeństwa dla użytkowników, co jest kluczowe w branży medycznej.",
+    "safteyTitle": "Bezpieczeństwo i Higiena",
+    "safteyContent": "Relugany medyczne produkowane przez Bylinka są wyprawiane przy użyciu specjalnie selekcjonowanych metod garbowania, które minimalizują ryzyko reakcji alergicznych i podrażnień skóry. Używamy garbników na bazie aluminium, które są znane z ich łagodnego działania, a także zgodności z surowymi normami higienicznymi wymaganymi w medycynie. Każda partia skór jest poddawana rygorystycznym testom jakościowym, aby zapewnić, że spełnia standardy medyczne.",
+    "applicationTitle": "Zastosowania Medyczne",
+    "applicationContent": "Nasze skóry medyczne znajdują zastosowanie w produkcji opatrunków, opasek ortopedycznych, elementów odzieży medycznej oraz innych akcesoriów, które mają bezpośredni kontakt ze skórą pacjentów. Ich delikatność i miękkość sprawiają, że są idealne dla osób o wrażliwej skórze oraz tych, którzy potrzebują specjalnej troski w zarządzaniu stanami skórnymi lub urazami.",
+    "techTitle": "Technologia i Innowacje",
+    "techContent": "Dążymy do ciągłego doskonalenia technologii wyprawiania skór medycznych. W Garbarni Bylinka stosujemy nowoczesne metody obróbki, które nie tylko zwiększają komfort użytkowania naszych produktów, ale także poprawiają ich trwałość i funkcjonalność. Innowacyjne podejście do produkcji pozwala nam na dostosowanie skór do specyficznych potrzeb medycznych naszych klientów, oferując produkty, które są zarówno skuteczne, jak i estetycznie przyjemne.",
+    "qualityTitle": "Zobowiązanie do Jakości",
+    "qualityContent": "Nasze relugany medyczne są symbolem zaangażowania Garbarni Bylinka w dostarczanie najwyższej jakości produktów. Każdy krok w procesie produkcji jest ściśle monitorowany, aby zapewnić, że finalny produkt nie tylko spełnia, ale przewyższa oczekiwania naszych klientów oraz standardy branży medycznej. Zobowiązujemy się do utrzymania najwyższych standardów etycznych i środowiskowych, co czyni nas liderem w produkcji skór medycznych.",
+    "partnerTitle": "Partnerstwo i Współpraca",
+    "partnerContent": "W Bylinka rozumiemy znaczenie współpracy z sektorem medycznym. Jesteśmy otwarci na partnerstwa z klinikami, szpitalami, producentami sprzętu medycznego oraz badaczami w celu dostarczania produktów, które najlepiej odpowiadają potrzebom medycznym. Nasze relugany medyczne to więcej niż produkt - to część kompleksowego podejścia do zdrowia i dobrego samopoczucia pacjentów na całym świecie."
   }
 }

@@ -5,8 +5,8 @@ import LanguageSwitcher from "./LanguageSwitcher";
 
 const Navbar = () => {
   return (
-    <div className="max-w-[1250px] mx-auto p-4 flex items-center justify-between gap-4">
-      <Link href="/" className="w-[100px] cursor-pointer">
+    <div className="max-w-[1250px] mx-auto p-6 flex items-center justify-between gap-4">
+      <Link href="/" className="w-[75px] md:w-[95px] cursor-pointer">
         <Image
           src={"/logo.png"}
           alt="Sheeps Skin LOGO"

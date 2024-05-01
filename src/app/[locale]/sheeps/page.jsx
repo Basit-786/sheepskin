@@ -3,16 +3,20 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import { IoIosArrowUp } from "react-icons/io";
+import { useTranslations } from "next-intl";
 
 const images = ["/about.jpeg", "/pr2.png", "/pr1.png", "/pr3.png"];
 
 const Sheeps = () => {
+  const t = useTranslations("Sheeps");
+
   const [selectedImage, setSelectedImage] = useState("/about.jpeg");
+
   return (
-    <div className="max-w-[1000px] flex flex-col items-center justify-center mx-auto px-4 py-8 lg:py-16">
-      <div className="flex justify-between gap-10 w-full">
+    <div className="max-w-[1000px] flex flex-col items-center justify-center mx-auto px-6 py-8 lg:py-16">
+      <div className="flex flex-col md:flex-row justify-between gap-5 md:gap-10 w-full">
         <div className="w-full">
-          <div className="w-full h-[500px] rounded-lg overflow-hidden">
+          <div className="w-full h-[380px] md:h-[500px] rounded-lg overflow-hidden">
             <Image
               src={selectedImage}
               alt=""
@@ -22,15 +26,15 @@ const Sheeps = () => {
             />
           </div>
         </div>
-        <div className="flex flex-col items-center justify-between gap-2">
+        <div className="flex flex-row md:flex-col items-center justify-between gap-2">
           {/* <div className="bg-secondary rounded-md px-2 py-1 w-full flex items-center justify-center cursor-pointer">
             <IoIosArrowUp className="text-white text-[30px]" />
           </div> */}
-          <div className="flex flex-col gap-2 h-[500px] overflow-y-auto scroll-hidden">
+          <div className="flex flex-row md:flex-col gap-4 md:h-[500px] overflow-y-auto scroll-hidden">
             {images.map((item, index) => (
               <div
                 key={index}
-                className={`w-[140px] h-[140px] flex-shrink-0 flex-grow-0 transition ${
+                className={`w-[100px] h-[100px] md:w-[140px] md:h-[140px] flex-shrink-0 flex-grow-0 transition ${
                   item == selectedImage ? "border-[4px]" : "border-[2px]"
                 }  border-secondary rounded-lg cursor-pointer`}
               >
@@ -50,54 +54,39 @@ const Sheeps = () => {
           </div> */}
         </div>
       </div>
-      <div className="p-4 mt-10">
-        <h2 className="text-3xl font-bold sm:text-4xl leading-[110%] my-3">
-          Lorem ipsum Lorem ipsum dolo{" "}
+      <div className="mt-5 md:mt-10">
+        <h2 className="text-2xl xs:text-3xl font-bold md:text-4xl leading-[110%] my-3">
+          {t("title")}
         </h2>
-        <p className="my-4 text-[#666666] text-[16px]">
-          At [Your Company Name], we specialize in utilizing the finest animal
-          skins, including sheep, reindeer, and deer, to craft an array of
-          medical products, decorations, and much more. Our dedication to
-          quality craftsmanship and ethical sourcing ensures that every item we
-          produce meets the highest standards.
-        </p>
+        <p className="md:my-4 my-2.5 text-[#666666] text-[16px]">{t("description")}</p>
 
-        <h2 className="text-2xl font-bold sm:text-3xl leading-[110%] my-4 mt-6">
+        <h2 className="text-2xl font-bold xs:text-3xl leading-[110%] md:my-4 my-2.5 mt-4 md:mt-6">
           Product Processing
         </h2>
         <h3 className="text-secondary text-xl font-semibold my-3">
-          Step 1: Sourcing and Preparation
+          {t("stageOneTitle")}
         </h3>
-        <div className="flex items-center justify-center gap-4 my-8">
+        <div className="flex items-center justify-center flex-col md:flex-row gap-4 my-8">
           <Image
             src={"/about.jpeg"}
             alt=""
-            className="w-1/2 object-cover rounded-lg"
+            className="md:w-1/2 object-cover rounded-lg"
             width={500}
             height={400}
           />
           <Image
             src={"/about.jpeg"}
             alt=""
-            className="w-1/2 object-cover rounded-lg"
+            className="md:w-1/2 object-cover rounded-lg"
             width={500}
             height={400}
           />
         </div>
-        <p className="my-4 text-[#666666] text-[16px]">
-          Sourcing: Reindeer skins are sourced from reputable suppliers who
-          adhere to ethical and sustainable practices. These suppliers often
-          work closely with indigenous communities or small-scale farmers who
-          raise reindeer for various purposes. Preparation: Upon arrival, each
-          reindeer skin undergoes careful inspection to ensure it meets quality
-          standards. Any damaged or flawed areas are noted for special attention
-          during the tanning process. The skins are then sorted based on size,
-          thickness, and quality.
-        </p>
+        <p className="md:my-4 my-2.5 text-[#666666] text-[16px]">{t("stageOneDesc")}</p>
         <h3 className="text-secondary text-xl font-semibold my-3">
-          Step 2: Sourcing and Preparation
+          {t("stageTwoTitle")}
         </h3>
-        <div className="flex items-center justify-center gap-4 my-8">
+        {/* <div className="flex items-center justify-center gap-4 my-8">
           <Image
             src={"/about.jpeg"}
             alt=""
@@ -112,16 +101,97 @@ const Sheeps = () => {
             width={500}
             height={400}
           />
+        </div> */}
+        <p className="md:my-4 my-2.5 text-[#666666] text-[16px]">{t("stageTwoDesc")}</p>
+        <h3 className="text-secondary text-xl font-semibold my-3">
+          {t("stageThreeTitle")}
+        </h3>
+        {/* <div className="flex items-center justify-center gap-4 my-8">
+          <Image
+            src={"/about.jpeg"}
+            alt=""
+            className="w-1/2 object-cover rounded-lg"
+            width={500}
+            height={400}
+          />
+          <Image
+            src={"/about.jpeg"}
+            alt=""
+            className="w-1/2 object-cover rounded-lg"
+            width={500}
+            height={400}
+          />
+        </div> */}
+        <p className="md:my-4 my-2.5 text-[#666666] text-[16px]">{t("stageThreeDesc")}</p>
+        <h2 className="text-2xl font-bold sm:text-3xl leading-[110%] md:my-4 my-2.5 mt-4 md:mt-6">
+          {t("sheepBreedTitle")}
+        </h2>
+
+        <div className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="flex flex-col gap-2 p-3 shadow-card rounded-md">
+            <h3 className="text-secondary text-2xl font-semibold">
+              {t("breed1Title")}
+            </h3>
+            <p className="text-[#666666] text-[16px]">{t("breed1Desc")}</p>
+          </div>
+          <div className="flex flex-col gap-2 p-3 shadow-card rounded-md">
+            <h3 className="text-secondary text-2xl font-semibold">
+              {t("breed2Title")}
+            </h3>
+            <p className="text-[#666666] text-[16px]">{t("breed2Desc")}</p>
+          </div>
+          <div className="flex flex-col gap-2 p-3 shadow-card rounded-md">
+            <h3 className="text-secondary text-2xl font-semibold">
+              {t("breed3Title")}
+            </h3>
+            <p className="text-[#666666] text-[16px]">{t("breed3Desc")}</p>
+          </div>
+          <div className="flex flex-col gap-2 p-3 shadow-card rounded-md">
+            <h3 className="text-secondary text-2xl font-semibold">
+              {t("breed4Title")}
+            </h3>
+            <p className="text-[#666666] text-[16px]">{t("breed4Desc")}</p>
+          </div>
+          <div className="flex flex-col gap-2 p-3 shadow-card rounded-md">
+            <h3 className="text-secondary text-2xl font-semibold">
+              {t("breed5Title")}
+            </h3>
+            <p className="text-[#666666] text-[16px]">{t("breed5Desc")}</p>
+          </div>
+          <div className="flex flex-col gap-2 p-3 shadow-card rounded-md">
+            <h3 className="text-secondary text-2xl font-semibold">
+              {t("breed6Title")}
+            </h3>
+            <p className="text-[#666666] text-[16px]">{t("breed6Desc")}</p>
+          </div>
+          <div className="flex flex-col gap-2 p-3 shadow-card rounded-md">
+            <h3 className="text-secondary text-2xl font-semibold">
+              {t("breed7Title")}
+            </h3>
+            <p className="text-[#666666] text-[16px]">{t("breed7Desc")}</p>
+          </div>
+          <div className="flex flex-col gap-2 p-3 shadow-card rounded-md">
+            <h3 className="text-secondary text-2xl font-semibold">
+              {t("breed8Title")}
+            </h3>
+            <p className="text-[#666666] text-[16px]">{t("breed8Desc")}</p>
+          </div>
+          <div className="flex flex-col gap-2 p-3 shadow-card rounded-md">
+            <h3 className="text-secondary text-2xl font-semibold">
+              {t("breed9Title")}
+            </h3>
+            <p className="text-[#666666] text-[16px]">{t("breed9Desc")}</p>
+          </div>
+          <div className="flex flex-col gap-2 p-3 shadow-card rounded-md">
+            <h3 className="text-secondary text-2xl font-semibold">
+              {t("breed10Title")}
+            </h3>
+            <p className="text-[#666666] text-[16px]">{t("breed10Desc")}</p>
+          </div>
         </div>
-        <p className="my-4 text-[#666666] text-[16px]">
-          Sourcing: Reindeer skins are sourced from reputable suppliers who
-          adhere to ethical and sustainable practices. These suppliers often
-          work closely with indigenous communities or small-scale farmers who
-          raise reindeer for various purposes. Preparation: Upon arrival, each
-          reindeer skin undergoes careful inspection to ensure it meets quality
-          standards. Any damaged or flawed areas are noted for special attention
-          during the tanning process. The skins are then sorted based on size,
-          thickness, and quality.
+
+        <p className="md:my-4 my-2.5 mt-8 text-[#666666] text-[16px]">
+          {t("conclusion")}
         </p>
 
         <a
