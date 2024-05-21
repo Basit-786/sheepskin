@@ -12,7 +12,7 @@ const poppin = Poppins({
 
 export const metadata = {
   title: "Sheeps Skin",
-  description: "",
+  description: "Factory ",
 };
 
 export default function RootLayout({ children, params: { locale } }) {

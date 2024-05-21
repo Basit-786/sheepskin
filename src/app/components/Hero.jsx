@@ -1,7 +1,29 @@
+"use client"
+
 import Link from "next/link";
 import React from "react";
 
 import { useTranslations } from "next-intl";
+import AnimatedText from "./AnimatedText";
+
+import {delay, motion} from 'framer-motion'
+import { slideInFromBottom } from "../utils/motion";
+
+
+const initial ={
+  opacity: 0,
+  y:50
+}
+
+const anim ={
+  opacity:1,
+  y:0,
+  transition:{
+    duration: 0.2,
+    delay: 0.3,
+    ease: 'easeIn',
+  }
+}
 
 const Hero = () => {
   const t = useTranslations("Home");
@@ -11,11 +33,15 @@ const Hero = () => {
     <div className="px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
       <div>
         <h1 className="text-[40px] xs:text-[55px] md:text-[90px] font-[700] leading-[110%] max-w-[900px]">
-          {t("introText")}
+          <AnimatedText
+                repeatDelay={10000}
+                text={t("introText")}
+                once={true}
+              />
         </h1>
-        <p className="text-[#666666] text-lg mt-4">{t("introData")}</p>
+        <motion.p variants={slideInFromBottom(0.25,100)} initial={"hidden"} animate={"visible"} className="text-[#666666] text-lg mt-4">{t("introData")}</motion.p>
       </div>
-      <div className="flex flex-col mt-8">
+      <motion.div variants={slideInFromBottom(0.5,100)} initial={"hidden"} animate={"visible"}  className="flex flex-col mt-8">
         <h2 className="text-[#333333] text-2xl md:text-3xl font-[700]">{t2('explore')}</h2>
         <div className="w-full grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
           <Link
@@ -43,7 +69,7 @@ const Hero = () => {
             {t2("contact")}
           </Link>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

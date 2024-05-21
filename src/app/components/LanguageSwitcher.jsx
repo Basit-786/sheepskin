@@ -1,23 +1,20 @@
 "use client";
 
 import Image from "next/image";
-import React, {
-  useState,
-  ChangeEvent,
-  useTransition,
-  useEffect,
-  useRef,
-} from "react";
+import React, { useState, useTransition, useEffect, useRef } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 import { SlGlobe } from "react-icons/sl";
 
 import { useLocale } from "next-intl";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
+
+import { motion } from "framer-motion";
+import { onceTrue, slideInFromRight, slideInFromTop } from "../utils/motion";
 
 const langs = [
   {
     img: "/flags/polish.png",
-    name: "Polish",
+    name: "Polski",
     value: "pl",
   },
   {
@@ -54,11 +51,16 @@ const LanguageSwitcher = () => {
   const router = useRouter();
   const localActive = useLocale();
   const langRef = useRef();
+  const pathname = usePathname();
+
+  const currentPath = pathname.slice(3, pathname.length);
 
   const handleLang = (item) => {
     const nextLocale = item.value;
+    // console.log(currentPath, item.value);
+
     startTransition(() => {
-      router.replace(`/${nextLocale}`);
+      router.replace(`/${nextLocale}/${currentPath}`);
     });
 
     setLang(item);
@@ -67,7 +69,7 @@ const LanguageSwitcher = () => {
 
   useEffect(() => {
     const selectedLang = langs.filter((item) => item.value === localActive);
-    console.log(selectedLang, "Selected");
+    // console.log(selectedLang, "Selected");
     setLang(...selectedLang);
   }, []);
 
@@ -85,7 +87,14 @@ const LanguageSwitcher = () => {
   }, []);
 
   return (
-    <div ref={langRef} className=" relative flex items-center gap-2">
+    <motion.div
+      variants={slideInFromTop(0.5)}
+      initial={"hidden"}
+      viewport={onceTrue}
+      whileInView={"visible"}
+      ref={langRef}
+      className=" relative flex items-center gap-2"
+    >
       <div
         onClick={() => setIsOpen(!isOpen)}
         className=" flex items-center justify-center gap-1 text-[14px] font-semibold cursor-pointer"
@@ -116,7 +125,7 @@ const LanguageSwitcher = () => {
           ))}
         </div>
       )}
-    </div>
+    </motion.div>
   );
 };
 

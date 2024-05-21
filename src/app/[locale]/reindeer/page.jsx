@@ -5,12 +5,12 @@ import React, { useState } from "react";
 import { IoIosArrowUp } from "react-icons/io";
 import { useTranslations } from "next-intl";
 
-const images = ["/about.jpeg", "/pr2.png", "/pr1.png", "/pr3.png"];
+const images = ["/rd1.jpg", "/rd2.jpg", "/rd3.jpg", "/rd4.jpg","/rd5.jpg"];
 
 const Reindeer = () => {
   const t = useTranslations("Reindeer");
 
-  const [selectedImage, setSelectedImage] = useState("/about.jpeg");
+  const [selectedImage, setSelectedImage] = useState("/rd1.jpg");
 
   return (
     <div className="max-w-[1000px] flex flex-col items-center justify-center mx-auto px-4 py-8 lg:py-16">

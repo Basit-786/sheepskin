@@ -5,12 +5,12 @@ import React, { useState } from "react";
 import { IoIosArrowUp } from "react-icons/io";
 import { useTranslations } from "next-intl";
 
-const images = ["/about.jpeg", "/pr2.png", "/pr1.png", "/pr3.png"];
+const images = ["/sh4.jpg", "/sh1.jpg", "/sh2.jpg", "/sh3.jpg", "/sh5.jpg"];
 
 const Sheeps = () => {
   const t = useTranslations("Sheeps");
 
-  const [selectedImage, setSelectedImage] = useState("/about.jpeg");
+  const [selectedImage, setSelectedImage] = useState("/sh4.jpg");
 
   return (
     <div className="max-w-[1000px] flex flex-col items-center justify-center mx-auto px-6 py-8 lg:py-16">
@@ -58,7 +58,9 @@ const Sheeps = () => {
         <h2 className="text-2xl xs:text-3xl font-bold md:text-4xl leading-[110%] my-3">
           {t("title")}
         </h2>
-        <p className="md:my-4 my-2.5 text-[#666666] text-[16px]">{t("description")}</p>
+        <p className="md:my-4 my-2.5 text-[#666666] text-[16px]">
+          {t("description")}
+        </p>
 
         <h2 className="text-2xl font-bold xs:text-3xl leading-[110%] md:my-4 my-2.5 mt-4 md:mt-6">
           Product Processing
@@ -68,7 +70,7 @@ const Sheeps = () => {
         </h3>
         <div className="flex items-center justify-center flex-col md:flex-row gap-4 my-8">
           <Image
-            src={"/about.jpeg"}
+            src={"/sh3.jpg"}
             alt=""
             className="md:w-1/2 object-cover rounded-lg"
             width={500}
@@ -82,7 +84,9 @@ const Sheeps = () => {
             height={400}
           />
         </div>
-        <p className="md:my-4 my-2.5 text-[#666666] text-[16px]">{t("stageOneDesc")}</p>
+        <p className="md:my-4 my-2.5 text-[#666666] text-[16px]">
+          {t("stageOneDesc")}
+        </p>
         <h3 className="text-secondary text-xl font-semibold my-3">
           {t("stageTwoTitle")}
         </h3>
@@ -102,7 +106,9 @@ const Sheeps = () => {
             height={400}
           />
         </div> */}
-        <p className="md:my-4 my-2.5 text-[#666666] text-[16px]">{t("stageTwoDesc")}</p>
+        <p className="md:my-4 my-2.5 text-[#666666] text-[16px]">
+          {t("stageTwoDesc")}
+        </p>
         <h3 className="text-secondary text-xl font-semibold my-3">
           {t("stageThreeTitle")}
         </h3>
@@ -122,7 +128,9 @@ const Sheeps = () => {
             height={400}
           />
         </div> */}
-        <p className="md:my-4 my-2.5 text-[#666666] text-[16px]">{t("stageThreeDesc")}</p>
+        <p className="md:my-4 my-2.5 text-[#666666] text-[16px]">
+          {t("stageThreeDesc")}
+        </p>
         <h2 className="text-2xl font-bold sm:text-3xl leading-[110%] md:my-4 my-2.5 mt-4 md:mt-6">
           {t("sheepBreedTitle")}
         </h2>

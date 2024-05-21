@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { HiOutlineMail } from "react-icons/hi";
 import { PiPhone } from "react-icons/pi";
@@ -7,18 +9,29 @@ import Image from "next/image";
 
 import { useTranslations } from "next-intl";
 
+import { motion } from "framer-motion";
+import { onceTrue, slideInFromBottom } from "../utils/motion";
+
 const Contact = () => {
   const t = useTranslations("Home");
   const t2 = useTranslations("Common");
 
   return (
     <section>
-      <div className="px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
+      <motion.div
+        variants={slideInFromBottom(0.2, 100)}
+        initial={"hidden"}
+        viewport={onceTrue}
+        whileInView={"visible"}
+        className="px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16"
+      >
         <h2 className="text-3xl font-bold sm:text-4xl">
           {t("customSorcingTitle")}
         </h2>
 
-        <p className="md:mt-4 my-4 md:my-0 text-[#5E5B5B] text-lg">{t("customSourcingText")}</p>
+        <p className="md:mt-4 my-4 md:my-0 text-[#5E5B5B] text-lg">
+          {t("customSourcingText")}
+        </p>
 
         <a
           href="#contact"
@@ -26,8 +39,15 @@ const Contact = () => {
         >
           {t2("contact")}
         </a>
-      </div>
-      <div className="px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16" id="contact">
+      </motion.div>
+      <motion.div
+        variants={slideInFromBottom(0.5, 120)}
+        initial={"hidden"}
+        viewport={onceTrue}
+        whileInView={"visible"}
+        className="px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16"
+        id="contact"
+      >
         <h2 className="text-3xl font-bold sm:text-4xl"> {t2("contact")}</h2>
         <div className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 gap-4 md:gap-8 w-full mt-12">
           <div className="flex flex-col items-center justify-center gap-2 contact-shadow px-8 py-8 rounded-lg">
@@ -102,7 +122,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };
